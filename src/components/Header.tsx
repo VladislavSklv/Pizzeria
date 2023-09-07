@@ -19,7 +19,7 @@ const Header: React.FC = () => {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Pizzeria
+                        Shop
                     </Typography>
                     <Button
                         onClick={() => navigate('/cart')} 
