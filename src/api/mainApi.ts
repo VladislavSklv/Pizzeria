@@ -1,10 +1,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export interface IProduct {
-    userId: number
+    albumId: number
     id: number
     title: string
-    completed: boolean
+    url: string
+    thumbnailUrl: string
 }
 
 export const mainApi = createApi({
