@@ -14,12 +14,14 @@ const MainPage: React.FC = () => {
                         {
                             products.map(product => 
                                 <Grid key={product.id}>
-                                    <Card sx={{width: 250}}>
-                                        <CardMedia sx={{height: 250, width: 250}} image={product.thumbnailUrl} title={product.title}/>
-                                        <CardContent>
-                                            <Typography sx={{textTransform: 'capitalize'}} color={'text.secondary'}>{product.title}</Typography>
-                                        </CardContent>
-                                    </Card>
+                                    <div onClick={() => console.log(product.id)}>
+                                        <Card sx={{width: 250, cursor: 'pointer'}}>
+                                            <CardMedia sx={{height: 250, width: 250}} image={product.thumbnailUrl} title={product.title}/>
+                                            <CardContent>
+                                                <Typography sx={{textTransform: 'capitalize'}} color={'text.secondary'}>{product.title}</Typography>
+                                            </CardContent>
+                                        </Card>
+                                    </div>
                                 </Grid>
                             )
                         }
